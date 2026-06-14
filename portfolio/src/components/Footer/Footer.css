@@ -1,11 +1,8 @@
-/* src/components/Footer/Footer.css */
-
 .bvltra-footer {
   position: relative;
   width: 100%;
   background-color: #000000;
   color: #ffffff;
-  /* Added 4vw bottom padding so the 'p' descender fits entirely inside the box */
   padding: 0 5vw 4vw 5vw;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   z-index: 10;
@@ -40,14 +37,14 @@
 
 .footer-data-group {
   display: flex;
-  justify-content: space-between; /* Pushes Navigation left, Grouped data right */
+  justify-content: space-between; 
   padding: 4vw 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .right-columns-wrapper {
   display: flex;
-  gap: 8vw; /* Space between Github/LinkedIn and the Contact Matrix */
+  gap: 8vw; 
 }
 
 .data-column {
@@ -148,14 +145,14 @@ a.matrix-val:hover {
 /* Legal Links */
 .system-links {
   display: flex;
-  flex-direction: row; /* Restored back to a horizontal line */
+  flex-direction: row; 
   align-items: center;
   gap: 3vw;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding-bottom: 2vw; /* Aligns them with the bottom of the B */
+  padding-bottom: 2vw; 
 }
 
 .system-links a {
@@ -187,4 +184,56 @@ a.matrix-val:hover {
   max-width: 300px;
   height: 70px;
   color: #ffffff;
+}
+
+/* --- RESPONSIVE SHIFT (MOBILE/TABLET) --- */
+@media (max-width: 1024px) {
+  
+  /* --- TOP SECTION: SPLIT LEFT & RIGHT --- */
+  .footer-data-group {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .right-columns-wrapper {
+    flex-direction: column; 
+    align-items: flex-end;
+    gap: 2.5rem;
+  }
+
+  /* --- BOTTOM SECTION: TYPOGRAPHY & LINKS ALIGNMENT --- */
+  .footer-bottom-layer {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-end; 
+    gap: 2rem;
+  }
+
+  .huge-brand-mark {
+    order: 1; 
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .system-links {
+    order: 2; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    gap: 0.75rem;
+    padding-bottom: 0;
+  }
+
+  .badge-container {
+    order: 3; 
+    width: 100%;
+    margin-top: 2rem; 
+  }
+
+  .ow-logo-slot {
+    width: 100%;
+    height: auto;
+  }
 }

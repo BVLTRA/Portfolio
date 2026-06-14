@@ -28,27 +28,26 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr; 
   align-items: center;
-  padding: 2vw 0; 
-  transition: padding 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  padding: 40px 0 20px 0; 
+  transition: padding 0.4s cubic-bezier(0.19, 1, 0.22, 1), gap 0.4s ease;
 }
 
 /* --- SHRINK --- */
 /* When the nav gets the .scrolled class, shrink the inner container's padding */
 .bvltra-nav.scrolled .nav-container {
-  padding: 1vw 0; /* Half thickness */
+  padding: 20px 0;
 }
 /* --- BRAND LOGO (LEFT) --- */
 .nav-brand {
-  justify-self: start;
+  justify-self: start; 
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
   color: #ffffff;
-  pointer-events: none;
-  max-width: clamp(200px, 20vw, 400px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  pointer-events: none; 
+  
+  transition: opacity 0.3s ease, transform 0.4s ease, max-height 0.4s ease;
+  max-height: 50px; 
 }
 
 .brand-sans {
@@ -122,4 +121,47 @@
   font-size: 20px;
   font-style: italic;
   color: var(--text-primary, #dac5a7);
+}
+
+/* --- RESPONSIVE SHIFT (MOBILE) --- */
+@media (max-width: 800px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; 
+    padding: 40px 0 20px 0;
+  }
+  
+  .nav-brand {
+    justify-self: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-signature {
+    display: none; 
+  }
+
+  .nav-links {
+    justify-self: auto; 
+    gap: 6vw;
+  }
+
+  .nav-links a {
+    font-size: 11px; 
+  }
+
+  .bvltra-nav.scrolled .nav-container {
+    gap: 0;
+    padding: 15px 0; 
+  }
+
+  .bvltra-nav.scrolled .nav-brand {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+    margin: 0;
+}
 }
