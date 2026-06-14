@@ -9,17 +9,15 @@ const Navigation = () => {
 
   // Track scroll position
   useEffect(() => {
+    // Check scroll on mount to prevent "stuck" state on reload
     const handleScroll = () => {
-      // If scroll down more than 50px, activate the blur
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     // Attach the listener when the component mounts
     window.addEventListener('scroll', handleScroll);
+
+    handleScroll();
 
     // The cleanup function to prevent memory leaks
     return () => {
