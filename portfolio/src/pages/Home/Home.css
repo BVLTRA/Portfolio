@@ -1,0 +1,77 @@
+/* src/pages/Home/Home.css */
+
+.bvltra-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- HERO SECTION --- */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh; /* Takes up the full height of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero-badge {
+  border: 1px solid var(--border-default);
+  background: var(--bg-muted);
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 48px;
+}
+
+.hero-badge span {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-primary);
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* The fluid typography mechanic */
+.title-sans {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  /* clamp(min-size, preferred-size, max-size) */
+  font-size: clamp(60px, 10vw, 160px); 
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.title-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(60px, 10vw, 160px);
+  line-height: 1;
+  color: var(--text-primary);
+  /* Pulls the second line up slightly to match the tight design */
+  margin-top: -2vw; 
+}
+
+.hero-subtitle {
+  max-width: 500px;
+  margin-top: 48px;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  opacity: 0.7; /* Subdues the text slightly without changing the actual hex color */
+}
