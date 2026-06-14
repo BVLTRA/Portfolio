@@ -163,3 +163,41 @@
   display: flex;
   gap: 3rem;
 }
+
+/* --- ANIMATED SCROLL INDICATOR --- */
+
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0.7; 
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+}
+
+.scroll-indicator span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.scroll-arrow {
+  animation: smoothSweep 2s ease-in-out infinite;
+}
+
+@keyframes smoothSweep {
+  0% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(4px);
+  }
+  100% { 
+    transform: translateY(0px); 
+  }
+}

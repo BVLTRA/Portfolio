@@ -50,10 +50,22 @@ const Home = () => {
 
         {/*Footer Data */}
         <div className="hero-footer-data">
-          <span>[ ***** ] 5/5 (12)</span>
+          
+          {/* --- THE NEW SCROLL ANIMATION --- */}
+          <div className="scroll-indicator">
+            <span>SCROLL</span>
+            <svg 
+              width="10" height="14" viewBox="0 0 10 14" 
+              fill="none" xmlns="http://www.w3.org/2000/svg" 
+              className="scroll-arrow"
+            >
+              <path d="M5 0V13M5 13L1 9M5 13L9 9" stroke="currentColor" strokeWidth="1.5"/>
+            </svg>
+          </div>
+
           <div className="middle-stats">
-            <span>50+ [ PROJECTS ]</span>
-            <span>8Y [ EXPERIENCE ]</span>
+            <span>3+ [ PROJECTS ]</span>
+            <span>2Y [ EXPERIENCE ]</span>
             <span>0% [ FAILED PROJECTS ]</span>
           </div>
           <span>SEE WORK</span>

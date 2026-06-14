@@ -1,14 +1,37 @@
-import React, { useState } from "react";
-import "./Navigation.css";
+import React, { useState, useEffect } from 'react';
+import './Navigation.css';
 
 const Navigation = () => {
-  const [activeSection, setActiveSection] = useState("home");
-  const navItems = ["home", "work", "process", "contact"];
+  const [activeSection, setActiveSection] = useState('home');
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const navItems = ['home', 'work', 'process', 'contact'];
+
+  // Track scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      // If scroll down more than 50px, activate the blur
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Attach the listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // The cleanup function to prevent memory leaks
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array means this only sets up once on load
 
   return (
-    <nav className="bvltra-nav">
+    <nav className={`bvltra-nav ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        {/* Left Column (Brand)*/}
+        
+        {/* Left Column (Brand) */}
         <div className="nav-brand">
           <span className="brand-sans uppercase">BVLTRA</span>
           <span className="brand-serif lowercase italic">portfolio</span>
@@ -20,7 +43,7 @@ const Navigation = () => {
             <li key={item}>
               <a
                 href={`#${item}`}
-                className={activeSection === item ? "active" : ""}
+                className={activeSection === item ? 'active' : ''}
                 onClick={() => setActiveSection(item)}
               >
                 {item}
@@ -33,6 +56,7 @@ const Navigation = () => {
         <div className="nav-signature">
           <span>Tshedza Mosehane</span>
         </div>
+
       </div>
     </nav>
   );
