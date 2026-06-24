@@ -2,7 +2,7 @@
 
 A brutalist and minimal portfolio interface. Designed with an adherence to Swiss typography, architectural grid systems, and kinetic interactions. 
 
-Currently under active development.
+**Currently under active development.**
 
 ## Architecture
 
@@ -21,7 +21,7 @@ This interface abandons heavy UI components in favor of raw typography and spati
 * **Styling:** Pure CSS (CSS Variables, Flexbox, CSS Grid)
 * **Deployment:** Vercel (Edge Network)
 
-## Local Development
+## Local Development (TBC)
 
 To run this environment locally:
 
@@ -42,6 +42,3 @@ npm run dev
 
 **[ WORK IN PROGRESS ]** Core routing, global styling, and structural components are live. Content and specific interaction physics are actively being calibrated.
 
----
-
-© Tshedza Mosehane | BVLTRA
