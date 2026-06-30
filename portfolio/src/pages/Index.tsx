@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Users, Palette, Eye, Sparkles, BarChart3, ClipboardCheck, Star, Twitter } from "lucide-react";
-import Layout from "@/components/layout/Layout";
-import { usePortfolioList } from "@/hooks/usePortfolio";
-import { useBlogList } from "@/hooks/useBlog";
-import PortfolioCard from "@/components/portfolio/PortfolioCard";
-import BlogCard from "@/components/blog/BlogCard";
-import LoadingSkeleton from "@/components/ui/loading-skeleton";
-import ProcessSlider from "@/components/ProcessSlider";
-import PricingPlans from "@/components/PricingPlans";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HeroContent, HeroItem, FadeUp, FadeScale, SectionHeader, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animation";
-import { TypingHeading } from "@/components/ui/typing-heading";
-import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
-import BookingSection from "@/components/BookingSection";
+import Layout from "../components/layout/Layout";
+import { usePortfolioList } from "../hooks/usePortfolio";
+import { useBlogList } from "../hooks/useBlog";
+import PortfolioCard from "../components/portfolio/PortfolioCard";
+import BlogCard from "../components/blog/BlogCard";
+import LoadingSkeleton from "../components/ui/loading-skeleton";
+import ProcessSlider from "../components/ProcessSlider";
+import PricingPlans from "../components/PricingPlans";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
+import { HeroContent, HeroItem, FadeUp, FadeScale, SectionHeader, StaggerContainer, StaggerItem } from "../components/ui/scroll-animation";
+import { TypingHeading } from "../components/ui/typing-heading";
+import TestimonialsSection from "../components/testimonials/TestimonialsSection";
+import BookingSection from "../components/BookingSection";
 import heroBg from "@/assets/hero-bg.jpg";
 import team1 from "@/assets/team-1.jpg";
 import team2 from "@/assets/team-2.jpg";
@@ -53,13 +53,13 @@ const Index = () => {
             {/* Text Group */}
             <div className="flex flex-col gap-[10px]">
               <HeroItem>
-                <p className="text-sm font-medium tracking-[0.3em] uppercase text-white/70">Open to Opportunities</p>
+                <p className="text-sm font-medium tracking-[0.3em] uppercase text-white/70">Hello, I'm Tshedza Mosehane</p>
               </HeroItem>
               <HeroItem>
                 <TypingHeading />
               </HeroItem>
               <HeroItem>
-                <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Creating engaging brand experiences.</p>
+                <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">2nd Year Student</p>
               </HeroItem>
             </div>
             {/* Button */}
@@ -72,13 +72,7 @@ const Index = () => {
             {/* Trust Badge */}
             <HeroItem>
               <div className="inline-flex items-center gap-2 mt-[25px]">
-                <div className="flex items-center gap-1.5">
-                  <Star className="w-4 h-4 text-white/80" />
-                  <Star className="w-4 h-4 text-white/80" />
-                  <Star className="w-4 h-4 text-white/80" />
-                  <Star className="w-4 h-4 text-white/80" />
-                </div>
-                <span className="text-xs md:text-sm font-normal text-white/90">Helped over 100+ businesses</span>
+                <span className="text-xs md:text-sm font-normal text-white/90">"Nothing matters" - Unkown</span>
               </div>
             </HeroItem>
           </HeroContent>
@@ -126,35 +120,35 @@ const Index = () => {
               <Zap className="w-8 h-8 text-white" />
             </div>
             <p className="text-sm font-medium tracking-[0.3em] uppercase text-white/60 mb-4">
-              Why Us
+              About Me
             </p>
             <h2 className="text-4xl md:text-5xl tracking-tight mb-6 font-normal lg:text-4xl">
-              Why Partner With Us
+              Who is "Tshedza"?
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              See why we're the leading choice for brand innovation.
+              Interests, passions, and what drives me to create meaningful experiences. 
             </p>
           </SectionHeader>
 
           {/* Features Grid */}
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Seamless Collaboration */}
+            {/* Community */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
-                  Collaboration
+                  Community
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Seamless Collaboration</h3>
+                <h3 className="text-xl mb-3 font-normal">Genuine Connection</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Delivered 50+ projects driving tangible results for companies
+                  I value authentic relationships and prioritize shared understanding over simple labels.
                 </p>
               </div>
             </StaggerItem>
 
-            {/* Design Solutions */}
+            {/* Design */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
@@ -163,30 +157,30 @@ const Index = () => {
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
                   Design
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Design Solutions</h3>
+                <h3 className="text-xl mb-3 font-normal">Beneath the Surface</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Improved 30+ user experiences for satisfaction.
+                  I dissect the underlying structures of systems to figure out how they actually operate.
                 </p>
               </div>
             </StaggerItem>
 
-            {/* Boosted Brand Visibility */}
+            {/* Spotting the Patterns */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                   <Eye className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
-                  Visibility
+                  Perception
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Boosted Brand Visibility</h3>
+                <h3 className="text-xl mb-3 font-normal">Spotting the Patterns</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  95% customer satisfaction rate
+                  I try to observe the world thoughtfully, connecting big-picture ideas to intricate behaviors.
                 </p>
               </div>
             </StaggerItem>
 
-            {/* Brand Impact */}
+            {/* Leading with Care */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
@@ -195,41 +189,41 @@ const Index = () => {
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
                   Impact
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Brand Impact</h3>
+                <h3 className="text-xl mb-3 font-normal">Leading with Care</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Creating memorable brand experiences that resonate with audiences
+                  Aid in coordinating community drives and campus activations to create meaningful, local change.
                 </p>
               </div>
             </StaggerItem>
 
-            {/* Data-Driven Insights */}
+            {/* Clarity Above Comfort */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                   <BarChart3 className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
-                  Data
+                  Truth
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Data-Driven Insights</h3>
+                <h3 className="text-xl mb-3 font-normal">Clarity Above Comfort</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Analyzed user behavior for a 25% engagement boost.
+                  I ground my choices in honest analysis, preferring hard reality over easy illusions.
                 </p>
               </div>
             </StaggerItem>
 
-            {/* Agile Management */}
+            {/* Intentional Growth */}
             <StaggerItem>
               <div className="group p-8 rounded-4xl bg-white/5 hover:bg-white/10 transition-all duration-500">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                   <ClipboardCheck className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xs font-medium tracking-wider uppercase text-white/50 mb-2 block">
-                  Management
+                  Discipline
                 </span>
-                <h3 className="text-xl mb-3 font-normal">Agile Management</h3>
+                <h3 className="text-xl mb-3 font-normal">Intentional Growth</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Led teams to achieve milestones early.
+                  I treat my physical routines and internal thoughts as spaces for continuous exploration.
                 </p>
               </div>
             </StaggerItem>
@@ -238,7 +232,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Plans Section */}
-      <PricingPlans />
+      {/* <PricingPlans /> */}
 
       {/* Our Process Section - Premium Slider */}
       <ProcessSlider />

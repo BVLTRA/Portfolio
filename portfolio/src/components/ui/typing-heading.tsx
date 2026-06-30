@@ -1,10 +1,10 @@
-import { useTypingAnimation } from '@/hooks/useTypingAnimation';
-import { cn } from '@/lib/utils';
+import { useTypingAnimation } from '../../hooks/useTypingAnimation';
+import { cn } from '../../lib/utils';
 
 // ✏️ HERO HEADING TEXT - EASY TO EDIT
 // Just change this text to update the heading
-const HERO_HEADING_LINE_1 = "Accelerate business growth";
-const HERO_HEADING_LINE_2 = "with strategic advertising.";
+const HERO_HEADING_LINE_1 = "Student Full-stack Developer";
+const HERO_HEADING_LINE_2 = "& Industrial Designer";
 interface TypingHeadingProps {
   className?: string;
 }

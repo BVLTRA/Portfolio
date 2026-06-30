@@ -7,7 +7,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="font-bold tracking-tight text-lg">Orveka</Link>
             <p className="mt-4 text-muted-foreground max-w-xs">
-              Accelerate business growth with strategic advertising
+              Student Full-stack Developer & Industrial Designer. I create digital experiences that are both functional and visually appealing, blending creativity with technical expertise.
             </p>
           </div>
 
