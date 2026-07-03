@@ -1,122 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="portfolio-wrapper">
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="logo">BVLTRA.</div>
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </nav>
 
-      <div className="ticks"></div>
+      {/* Hero Section */}
+      <header className="hero">
+        {/* Background Graphic */}
+        <div className="bg-circle"></div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Lower Half Content */}
+        <div className="content-grid">
+          
+          <div className="left-column">
+            <h1 className="hero-title">
+              full-stack developer <br/>
+              &amp; industrial designer.
+            </h1>
+            
+            <p className="hero-intro">
+              Hi, I'm Tshedza Mosehane, a passionate developer and designer based in Pretoria. I'm currently a second-year student studying Creative Technologies at the Open Window Institute.
+            </p>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            <a href="#works" className="works-link">
+              SEE MY WORKS
+              <svg className="arrow-icon" viewBox="0 0 50 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49.7071 8.20711C50.0976 7.81658 50.0976 7.18342 49.7071 6.79289L43.3431 0.428932C42.9526 0.0384078 42.3195 0.0384078 41.9289 0.428932C41.5384 0.819456 41.5384 1.45262 41.9289 1.84315L47.5858 7.5L41.9289 13.1569C41.5384 13.5474 41.5384 14.1805 41.9289 14.5711C42.3195 14.9616 42.9526 14.9616 43.3431 14.5711L49.7071 8.20711ZM0 8.5H49V6.5H0V8.5Z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <div className="social-links">
+              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+
+          <div className="right-column">
+            <svg className="huge-x" viewBox="0 0 124 128" xmlns="http://www.w3.org/2000/svg">
+              <line x1="118" y1="5" x2="5" y2="123" />
+              <line x1="5" y1="5" x2="118" y2="123" />
+            </svg>
+          </div>
+
+        </div>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
