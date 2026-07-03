@@ -4,7 +4,6 @@ import './App.css';
 function App() {
   return (
     <div className="portfolio-wrapper">
-      {/* Navbar */}
       <nav className="navbar">
         <div className="logo">BVLTRA.</div>
         <div className="nav-links">
@@ -15,12 +14,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <header className="hero">
-        {/* Background Graphic */}
         <div className="bg-circle"></div>
 
-        {/* Lower Half Content */}
+        {/* The wrapper that pulls everything to the center */}
         <div className="content-grid">
           
           <div className="left-column">
@@ -30,7 +27,7 @@ function App() {
             </h1>
             
             <p className="hero-intro">
-              Hi, I'm Tshedza Mosehane, a passionate developer and designer based in Pretoria. I'm currently a second-year student studying Creative Technologies at the Open Window Institute.
+              Hi, I'm Tshedza Mosehane, a student developer and designer based in Pretoria.
             </p>
 
             <a href="#works" className="works-link">
@@ -47,10 +44,17 @@ function App() {
           </div>
 
           <div className="right-column">
-            <svg className="huge-x" viewBox="0 0 124 128" xmlns="http://www.w3.org/2000/svg">
-              <line x1="118" y1="5" x2="5" y2="123" />
-              <line x1="5" y1="5" x2="118" y2="123" />
-            </svg>
+            {/* Drop your image in the src below */}
+            <div className="image-wrapper">
+              <svg id="header__cross" viewBox="0 0 123.49 127.88"><defs><style>{`.cross-line1,
+.cross-line2 {
+stroke: #000;
+stroke-miterlimit: 10;
+stroke-width: 15px;
+stroke-dasharray: 200;
+stroke-dashoffset: 200;
+}`}</style></defs><line className="cross-line1" x1="118.08" y1="5.19" x2="5.41" y2="122.69" style={{strokeDashoffset: '0px'}}></line><line className="cross-line2" x1="5.41" y1="5.19" x2="118.08" y2="122.69" style={{strokeDashoffset: '0px'}}></line></svg>
+            </div>
           </div>
 
         </div>
