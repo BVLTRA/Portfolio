@@ -1,5 +1,5 @@
-# Portfolio
-
+# Portfolio 
+<img src="./frontend/public/og-preview.jpg" alt="Header image" width="100%" height="auto">
 A brutalist and minimal portfolio interface. Designed with an adherence to Swiss typography, architectural grid systems, and kinetic interactions. 
 
 **Currently under active development.**
