@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import logo from './assets/images/logo.png';
 
 function App() {
   return (
     <div className="portfolio-wrapper">
       <nav className="navbar">
-        <div className="logo">BVLTRA.</div>
+        <div className="logo"><img src={logo} alt="Portfolio logo: stylized monogram and wordmark presenting B V L T R A in geometric modern lettering, black on light background; located in the site header navigation bar conveying a professional, minimalist tone" /></div>
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
