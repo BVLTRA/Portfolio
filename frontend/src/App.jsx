@@ -39,8 +39,8 @@ function App() {
             </a>
 
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://github.com/BVLTRA" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://instagram.com/bvltra" target="_blank" rel="noreferrer">Instagram</a>
             </div>
           </div>
 
