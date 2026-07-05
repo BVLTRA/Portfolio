@@ -13,7 +13,7 @@ function App() {
       <SkillsMarquee />
       
       <SectionIntro 
-        number="01" 
+        number="02" 
         title="The Process" 
         heading="Dissecting the system." 
         paragraph="I build things by first tearing them down. Understanding the underlying mechanics of a framework allows me to assemble interfaces that are actually robust, rather than just aesthetically pleasing." 

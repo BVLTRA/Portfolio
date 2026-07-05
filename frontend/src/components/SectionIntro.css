@@ -2,7 +2,6 @@
   width: 100%;
   padding: 0rem 8rem 10rem; /* Gives the block breathing room top and bottom */
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
   color: var(--text-dark);
   overflow-x: hidden;
 }
@@ -53,7 +52,7 @@
 
 .intro-content h2 {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -61,7 +60,7 @@
 
 .intro-content p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 2;
   color: #474747;
 }
 
