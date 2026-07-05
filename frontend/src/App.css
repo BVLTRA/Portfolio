@@ -12,10 +12,3 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-off-white);
-  color: var(--text-dark);
-  overflow-x: hidden;
-}
