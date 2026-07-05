@@ -2,9 +2,9 @@ import React from 'react';
 import './SkillsMarquee.css';
 
 // Break the data down into arrays so they can be mapped as individual components
-const row1 = ["FULL-STACK DEVELOPMENT", "MERN STACK", "REACT.JS", "NODE.JS", "API INTEGRATION", "DATABASE ARCHITECTURE"];
-const row2 = ["INDUSTRIAL DESIGN", "3D MODELING", "CAD", "RAPID PROTOTYPING", "HARDWARE AESTHETICS", "UI/UX DESIGN"];
-const row3 = ["CREATIVE TECHNOLOGIES", "OBJECTIVE FEEDBACK", "SYSTEM DISSECTION", "PATTERN SPOTTING", "INTENTIONAL GROWTH"];
+const row1 = ["Full-Stack Development", "MERN Stack", "React.js", "Node.js", "API Integration", "Database Architecture"];
+const row2 = ["Industrial Design", "3D Modeling", "CAD", "Rapid Prototyping", "Hardware Aesthetics", "UI/UX Design"];
+const row3 = ["Creative Technologies", "User Research", "System Dissection", "Branding", "Interaction Design"];
 
 // A reusable sub-component for the rows
 const MarqueeRow = ({ items }) => (
