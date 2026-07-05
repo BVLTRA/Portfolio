@@ -1,0 +1,47 @@
+.quote-section {
+  width: 100%;
+  padding: 0rem 10rem 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.quote-wrapper {
+  max-width: 1300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Distance between quote and author */
+}
+
+.quote-text {
+  font-size: 30px;
+  font-weight: 600; 
+  line-height: 1.3;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.quote-author {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 2px;
+  color: #888888;
+  align-self: end;
+  padding-right: 10px;
+}
+
+/* Responsive scaling for the massive text */
+@media (max-width: 900px) {
+  .quote-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .quote-text {
+    font-size: 26px;
+  }
+}

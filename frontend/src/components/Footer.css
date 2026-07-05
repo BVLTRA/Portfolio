@@ -1,0 +1,157 @@
+.footer-wrapper {
+  background-color: #e40013;
+  color: #000000;
+  padding: 6rem 2rem 2rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* --- The Dual Logo Structure --- */
+.dual-logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Distance between the logos and the X */
+}
+
+.dual-logo img{
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Distance between the logos and the X */
+  height: 5rem;
+}
+
+.logo-image-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #000000; /* Temp black box until you add your image */
+  border-radius: 50%;
+  /* If your logo is a rectangle, remove border-radius and adjust width/height */
+}
+
+.cross-divider {
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
+}
+
+.dual-logo h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 9px;
+}
+
+/* --- The Grid --- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  text-align: left;
+}
+
+/* Specific styling for the new Context paragraph */
+.context-text {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  padding-right: 2rem; /* Keeps it from crashing into the next column */
+  text-align: left;
+}
+
+.pending-text {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  opacity: 0.6;
+  align-content: flex-start;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.5;
+}
+
+/* --- Bottom Separator --- */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 6rem auto 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1.5px solid #000000;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+  }
+  .context-text {
+    padding-right: 0; 
+  }
+}
+
+@media (max-width: 500px) {
+  .dual-logo h2 {
+    font-size: 2rem;
+  }
+  .logo-image-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr; 
+  }
+}

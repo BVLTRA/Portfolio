@@ -1,65 +1,68 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import SkillsMarquee from './components/SkillsMarquee';
+import SectionIntro from './components/SectionIntro';
+import ToolsGrid from './components/ToolsGrid';
+import ContactInfo from './components/ContactInfo';
+import QuoteBlock from './components/QuoteBlock';
+import Footer from './components/Footer';
 import './App.css';
-import logo from './assets/images/logo.png';
 
 function App() {
   return (
     <div className="portfolio-wrapper">
-      <nav className="navbar">
-        <div className="logo"><img src={logo} alt="Portfolio logo: stylized monogram and wordmark presenting B V L T R A in geometric modern lettering, black on light background; located in the site header navigation bar conveying a professional, minimalist tone" /></div>
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+      <Navbar />
+      <Hero />
+      <SkillsMarquee />
+      
+      <div id="process">
+      <SectionIntro 
+        number="1.1" 
+        title="The Process" 
+        heading="How I work - Interactive Development." 
+        paragraph="When I start working on a project, I try to get all the information and data from my client relevant to the project such as goals, demographics and preferred aesthetics. After this, I start doing the research about the industry, competition, trends and other factors that are necessary for the development of the project. After I have all the data that I need, my next step is to work on the wireframe and prototype using tools such as Adobe XD and Figma. After the prototype is finished and the wireframes are finalized and approved, I begin creating the visual designs using various tools such as Adobe Photoshop for processing images, Adobe Illustrator for creating vector graphics, and Adobe XD or Figma for building the actual visual design. After the visual designs are complete and accepted, I go on to translating the designs into actual code using a wide range of technologies such as HTML, CSS and JavaScript with best practices in mind." 
+      />
+      
+      <SectionIntro 
+        number="1.2" 
+        title="The Process" 
+        heading="How I work - Industrial Product Design." 
+        paragraph="When it comes to industrial design, the process is mainly the same. The only differences would be the programs while planing (the classic pen and paper), designing (Solidworks and Visualize), and bringing the product to life through approprate fabrication technologies. During the planning process, I also take account of various design-best-practices such as efficient packaging, balancing user-centered ergonomics, manufacturing feasibility (DFM), aesthetic coherence, and many more." 
+      />
+      </div>
 
-      <header className="hero">
-        <div className="bg-circle"></div>
+       <div id="stack">
+        {/* 02: The Stack (With the Tools Grid inside) */}
+        <SectionIntro 
+          number="2.0" 
+          title="The Tools" 
+          heading="What I use." 
+          paragraph="I use a number of tools that make design and development much easier. I usually use Adobe XD or Figma interchangeably for doing all the process that includes wireframing, prototyping and visual design. For wireframing alone, any graphic design tool can make the job done either it is low fidelity or high fidelity wireframe. For development/coding, I use different tools specific to the development of the application or website. For product design, I mainly use Solidworks programs. Listed below are the tools and technologies that I use and I'm knowledgeable with." 
+      >
+        {/* Tool list component may be edited in actual component file */}
+        <ToolsGrid />
+      </SectionIntro>
+      </div>
 
-        {/* The wrapper that pulls everything to the center */}
-        <div className="content-grid">
-          
-          <div className="left-column">
-            <h1 className="hero-title">
-              full-stack developer <br/>
-              &amp; industrial designer.
-            </h1>
-            
-            <p className="hero-intro">
-              Hi, I'm Tshedza Mosehane, a student developer and designer based in Pretoria.
-            </p>
+      <div id="connect">
+      {/* 03: Contact Section */}
+      <SectionIntro 
+        number="03" 
+        title="Contact" 
+      >
+        <ContactInfo />
+      </SectionIntro>
+      </div>
 
-            <a href="#works" className="works-link">
-              SEE MY WORKS
-              <svg className="arrow-icon" viewBox="0 0 50 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.7071 8.20711C50.0976 7.81658 50.0976 7.18342 49.7071 6.79289L43.3431 0.428932C42.9526 0.0384078 42.3195 0.0384078 41.9289 0.428932C41.5384 0.819456 41.5384 1.45262 41.9289 1.84315L47.5858 7.5L41.9289 13.1569C41.5384 13.5474 41.5384 14.1805 41.9289 14.5711C42.3195 14.9616 42.9526 14.9616 43.3431 14.5711L49.7071 8.20711ZM0 8.5H49V6.5H0V8.5Z" fill="currentColor"/>
-              </svg>
-            </a>
+      {/* The Footer Quote */}
+      <QuoteBlock 
+        quote="The only reason anything matters is because it ends."
+        author="Unknown"
+      />
 
-            <div className="social-links">
-              <a href="https://github.com/BVLTRA" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://instagram.com/bvltra" target="_blank" rel="noreferrer">Instagram</a>
-            </div>
-          </div>
+      <Footer copyrightName="BVLTRA" />
 
-          <div className="right-column">
-            {/* Drop your image in the src below */}
-            <div className="image-wrapper">
-              <svg id="header__cross" viewBox="0 0 123.49 127.88"><defs><style>{`.cross-line1,
-.cross-line2 {
-stroke: #000;
-stroke-miterlimit: 10;
-stroke-width: 15px;
-stroke-dasharray: 200;
-stroke-dashoffset: 200;
-}`}</style></defs><line className="cross-line1" x1="118.08" y1="5.19" x2="5.41" y2="122.69" style={{strokeDashoffset: '0px'}}></line><line className="cross-line2" x1="5.41" y1="5.19" x2="118.08" y2="122.69" style={{strokeDashoffset: '0px'}}></line></svg>
-            </div>
-          </div>
-
-        </div>
-      </header>
     </div>
   );
 }
