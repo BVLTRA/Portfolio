@@ -1,0 +1,33 @@
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Space between the Socials block and the Email block */
+}
+
+.contact-block h2 {
+  /* Optinally override the default 1.5rem margin from the parent shell to pull the links slightly closer to or further from the heading */
+  
+  font-family: var(--font-stack);
+  margin-bottom: 1.5rem; 
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: inherit; /* Automatically pulls the #474747 color from the paragraph tag */
+  text-decoration: underline; /* Your standard browser underline */
+  transition: opacity 0.2s ease;
+  font-size: 15px;
+}
+
+.contact-links a:hover {
+  opacity: 0.6;
+}
+
+.separator {
+  margin: 0 0.5rem;
+}

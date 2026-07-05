@@ -51,6 +51,7 @@
 }
 
 .intro-content h2 {
+  font-family: var(--font-stack);
   font-size: 20px;
   font-weight: 700;
   color: #000000;

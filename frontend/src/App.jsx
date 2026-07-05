@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import SkillsMarquee from './components/SkillsMarquee';
 import SectionIntro from './components/SectionIntro';
 import ToolsGrid from './components/ToolsGrid';
+import ContactInfo from './components/ContactInfo';
+import QuoteBlock from './components/QuoteBlock';
 import './App.css';
 
 function App() {
@@ -34,9 +36,23 @@ function App() {
         heading="What I use." 
         paragraph="I use a number of tools that make design and development much easier. I usually use Adobe XD or Figma interchangeably for doing all the process that includes wireframing, prototyping and visual design. For wireframing alone, any graphic design tool can make the job done either it is low fidelity or high fidelity wireframe. For development/coding, I use different tools specific to the development of the application or website. For product design, I mainly use Solidworks programs. Listed below are the tools and technologies that I use and I'm knowledgeable with." 
       >
-        {/* Everything here automatically renders in the center column */}
+        {/* Tool list component may be edited in actual component file */}
         <ToolsGrid />
       </SectionIntro>
+
+      {/* 03: Contact Section */}
+      <SectionIntro 
+        number="03" 
+        title="Contact" 
+      >
+        <ContactInfo />
+      </SectionIntro>
+
+      {/* The Footer Quote */}
+      <QuoteBlock 
+        quote="Choose a job you love and you will never have to work a day in your life."
+        author="Confucius"
+      />
 
     </div>
   );
