@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
 /* --- VISUELT PRO FONT DEFINITIONS --- */
@@ -133,4 +137,39 @@ body {
   background-color: var(--bg-off-white);
   color: var(--text-dark);
   overflow-x: hidden;
+}
+
+.invert-element {
+  color: #ffffff; /* Must be white for pure black/white inversion */
+  mix-blend-mode: difference;
+  
+  /* If you are inverting an SVG or an Image, you might need this instead of color: */
+  /* fill: #ffffff; */ 
+}
+
+/* --- THE MOBILE LOCKOUT MECHANISM --- */
+
+@media (max-width: 768px) {
+  
+  /* 1. Prevent the user from scrolling past the Hero section */
+  body {
+    overflow: hidden; 
+    height: 100vh; /* Locks the body to exactly one screen height */
+  }
+
+  /* 2. Hide the Navbar Links entirely */
+  .navbar-links-fixed {
+    display: none !important;
+  }
+
+  /* 3. Style the Warning Text */
+  .mobile-warning {
+    color: #ff0000; /* Pure red warning text to match your brand */
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
 }

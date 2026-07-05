@@ -1,31 +1,54 @@
-.navbar {
+/* --- Navbar: Logo (Left Side) --- */
+.navbar-logo-fixed {
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 2.5rem 4rem;
+  left: 0;
+  padding: 1.6rem 4rem;
+  z-index: 100;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  background: transparent;
-  color: var(--text-dark);
-  overflow-x: hidden;
+  filter: invert(1);
+  mix-blend-mode: difference;
 }
 
-.logo img{
-  height: 1.7rem;
+/* --- Navbar: Links (Right Side) --- */
+.navbar-links-fixed {
+  
+  font-family: var(--font-stack);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2.5rem 4rem;
+  z-index: 100;
+  mix-blend-mode: difference;
 }
 
 .nav-links {
   display: flex;
   gap: 2.5rem;
+  align-items: center;
 }
 
 .nav-links a {
+    
+  font-family: var(--font-stack);
   text-decoration: none;
-  color: var(--text-dark);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #ffffff; 
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6; 
+}
+
+/* Responsive adjustment if you drop down to phone sizes */
+@media (max-width: 768px) {
+  .navbar-logo-fixed,
+  .navbar-links-fixed {
+    padding: 1.5rem 2rem;
+  }
 }
