@@ -8,7 +8,7 @@ export default function SectionIntro({ number, title, heading, paragraph }) {
         
         {/* Left Segment: The Labels */}
         <div className="intro-sidebar">
-          <span className="sidebar-number">/{number}</span>
+          <span className="sidebar-number">/ {number}</span>
           <span className="sidebar-title">{title}</span>
         </div>
 
