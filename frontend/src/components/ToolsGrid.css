@@ -1,0 +1,60 @@
+.tools-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e0e0e0; /* Clean separator line from the paragraph above */
+}
+
+/* Structural Split */
+.tools-group {
+  flex: 1; /* Left side takes 1 fraction */
+}
+
+.web-group {
+  flex: 2.5; /* Right side gets much more space for the 3 columns */
+}
+
+.web-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Typography */
+.tools-heading {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Spaces out the 6 items evenly */
+}
+
+.tools-list li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #474747;
+}
+
+/* Responsive Collapse for Mobile */
+@media (max-width: 900px) {
+  .tools-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .web-columns {
+    grid-template-columns: 1fr; /* Stacks the 3 columns on small phones */
+  }
+}
