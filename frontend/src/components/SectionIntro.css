@@ -1,0 +1,83 @@
+.section-intro-wrapper {
+  width: 100%;
+  padding: 0rem 8rem 10rem; /* Gives the block breathing room top and bottom */
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+.section-intro-grid {
+  width: 100%;
+  max-width: 1300px; /* Matches the hero constraint to keep lines aligned */
+  margin: 0 auto;
+  
+  display: grid;
+  /*
+    Default: 
+    1fr = Left Column (takes 1 fraction of space)
+    2fr = Center Column (takes 2 fractions, making it wider)
+    1fr = Right Column (takes 1 fraction, balancing the left)
+  */
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 2rem;
+}
+
+/* --- Left Segment Styling --- */
+.intro-sidebar {
+  display: flex;
+  gap: 1.5rem; /* Space between the number and the title */
+  align-items: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar-number {
+  font-size: 10px;
+  color: #000000;
+  font-weight: light;
+}
+
+.sidebar-title {
+  font-size: 10px;
+  color: #888888; /* The faint text */
+  font-weight: light;
+}
+
+/* --- Center Segment Styling --- */
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.intro-content h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.intro-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #474747;
+}
+
+/* --- Responsive Layout Collapse --- */
+/* When the screen gets too narrow, drop the 3-column grid and stack everything vertically */
+@media (max-width: 900px) {
+  .section-intro-grid {
+    grid-template-columns: 1fr; /* 1 single column */
+    max-width: 600px;
+  }
+  
+  .intro-spacer {
+    display: none; /* Hide the invisible block on mobile */
+  }
+  
+  .intro-sidebar {
+    margin-bottom: 1rem;
+  }
+}
