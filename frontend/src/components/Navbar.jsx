@@ -15,7 +15,6 @@ export default function Navbar() {
       {/* The Links: Floats on the top right, runs the inversion math */}
       <nav className="navbar-links-fixed">
         <div className="nav-links">
-          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#works">Works</a>
           <a href="#contact">Contact</a>

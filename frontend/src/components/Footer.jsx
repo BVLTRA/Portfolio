@@ -55,6 +55,7 @@ export default function Footer({ copyrightName }) {
               <li><a href="mailto:hello@bvltra.com">hello@bvltra.com</a></li>
               <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
               <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/tshedza-mosehane-0302092a9" target="_blank" rel="noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>

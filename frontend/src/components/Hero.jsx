@@ -49,8 +49,8 @@ export default function Hero() {
           {/* Hide Socials on Mobile */}
           {!isMobile && (
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://github.com/bvltra" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/tshedza-mosehane-0302092a9" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           )}
         </div>
