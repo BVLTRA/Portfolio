@@ -5,6 +5,7 @@ import SkillsMarquee from './components/SkillsMarquee';
 import SectionIntro from './components/SectionIntro';
 import ToolsGrid from './components/ToolsGrid';
 import ContactInfo from './components/ContactInfo';
+import ContactForm from './pages/Contact';
 import QuoteBlock from './components/QuoteBlock';
 import Footer from './components/Footer';
 import './App.css';
@@ -60,6 +61,16 @@ function App() {
         quote="The only reason anything matters is because it ends."
         author="Unknown"
       />
+
+      {/* Target: #works (You can drop your portfolio grid in here later) */}
+      <div id="works">
+        {/* Placeholder for future works component */}
+      </div>
+
+      {/* Target: #contact */}
+      <div id="contact">
+        <ContactForm />
+      </div>
 
       <Footer copyrightName="BVLTRA" />
 
