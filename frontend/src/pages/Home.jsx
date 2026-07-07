@@ -5,7 +5,6 @@ import SkillsMarquee from '../components/SkillsMarquee';
 import SectionIntro from '../components/SectionIntro';
 import ToolsGrid from '../components/ToolsGrid';
 import ContactInfo from '../components/ContactInfo';
-import ContactForm from '../pages/Contact';
 import QuoteBlock from '../components/QuoteBlock';
 import Footer from '../components/Footer';
 
