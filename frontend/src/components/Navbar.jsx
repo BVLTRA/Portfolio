@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import logo from "../assets/images/logo.png"
 
@@ -15,9 +16,9 @@ export default function Navbar() {
       {/* The Links: Floats on the top right, runs the inversion math */}
       <nav className="navbar-links-fixed">
         <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
+          <Link to="/">About</Link>
+          <Link to="/works">Works</Link>
+          <Link to="/contact">Contact</Link>
         </div>
       </nav>
     </>
