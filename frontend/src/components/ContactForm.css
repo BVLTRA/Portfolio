@@ -20,6 +20,7 @@
   letter-spacing: -2px;
   color: #000000;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .contact-subheading {
@@ -27,13 +28,14 @@
   line-height: 1.6;
   color: #474747;
   max-width: 400px; /* Constricts the paragraph so it doesn't drag out too long */
+  text-align: left;
 }
 
 /* --- Right Side Form --- */
 .minimal-form {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem; /* Generous spacing so the lines breathe */
+  gap: 3.5rem; 
   margin-top: 1rem; /* Aligns the top input visually with the heading */
 }
 
