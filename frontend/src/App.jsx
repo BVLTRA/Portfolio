@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 
 // Import your pages
 import Home from './pages/Home';
+import Qualification from './pages/Qualification';
 import ContactPage from './pages/ContactPage';
 
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
         {/* The Switchboard: Only one of these will show at a time based on the URL */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/qualification" element={<Qualification />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
 

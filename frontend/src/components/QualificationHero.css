@@ -1,0 +1,85 @@
+.qual-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-end; 
+  padding: 4rem;
+  overflow: hidden;
+  background-color: #ffffff; 
+  margin-bottom: 150px;
+}
+
+/* --- The Centered Circular Image --- */
+.qual-bg-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.qual-bg-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* --- The Typography Layer --- */
+.qual-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  color: #000000;
+  text-align: left;
+}
+
+.qual-title {
+  font-size: 4vw; 
+  font-weight: 600;
+  text-align: left;
+  color: #000000;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.qual-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: 300;
+  padding-left: 5px;
+}
+
+.qual-institute {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 900px) {
+  .qual-hero-wrapper {
+    padding: 2rem;
+  }
+  
+  .qual-title {
+    font-size: 48px;
+  }
+  
+  .qual-bg-circle {
+    width: 300px; 
+    height: 300px;
+  }
+}
