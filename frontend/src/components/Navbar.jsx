@@ -32,6 +32,13 @@ export default function Navbar() {
           >
             Works
           </Link>
+
+          <Link 
+            to="/qualification" 
+            className={location.pathname === '/contact' ? 'active-link' : ''}
+          >
+            Qualification
+          </Link>
           
           <Link 
             to="/contact" 

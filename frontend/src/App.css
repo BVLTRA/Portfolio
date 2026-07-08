@@ -139,14 +139,6 @@ body {
   overflow-x: hidden;
 }
 
-.invert-element {
-  color: #ffffff; /* Must be white for pure black/white inversion */
-  mix-blend-mode: difference;
-  
-  /* If you are inverting an SVG or an Image, you might need this instead of color: */
-  /* fill: #ffffff; */ 
-}
-
 /* --- THE MOBILE LOCKOUT MECHANISM --- */
 
 @media (max-width: 768px) {
