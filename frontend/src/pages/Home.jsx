@@ -59,8 +59,6 @@ function App() {
         author="Unknown"
       />
 
-      <Footer copyrightName="BVLTRA" />
-
     </div>
   );
 }

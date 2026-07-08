@@ -1,30 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Portfolio</title>
-    <meta name="title" content=BVLTRA | Tshedza Mosehane/>
-    <meta name="description" content="Portfolio of Tshedza Mosehane. Full-stack developer & Industrial designer." />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bvltra.com/" />
-    <meta property="og:title" content="BVLTRA | Tshedza Mosehane" />
-    <meta property="og:description" content="Portfolio of Tshedza Mosehane. Full-stack developer & Industrial designer." />
-    <meta property="og:image" content="https://bvltra.com/og-preview.jpg" />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://bvltra.com/" />
-    <meta name="twitter:title" content="BVLTRA | Tshedza Mosehane" />
-    <meta name="twitter:description" content="Portfolio of Tshedza Mosehane. Full-stack developer & Industrial designer." />
-    <meta name="twitter:image" content="https://bvltra.com/og-preview.jpg" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio</title>
+  <meta name="title" content=BVLTRA | Tshedza Mosehane />
+  <meta name="description" content="Portfolio of Tshedza Mosehane, creating under the alias BVLTRA. Bridging full-stack web development, MERN architecture, and industrial design." />
+  <meta name="keywords" content="Tshedza Mosehane, BVLTRA, Full-Stack Developer, Industrial Designer, React Developer, MERN Stack, UI/UX Design, 3D Modeling, SolidWorks, Creative Technologies, South Africa" />
+  <meta name="author" content="Tshedza Mosehane" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bvltra.com/" />
+  <meta property="og:title" content="BVLTRA | Tshedza Mosehane" />
+  <meta property="og:description"
+    content="Portfolio of Tshedza Mosehane. Full-stack developer & Industrial designer." />
+  <meta property="og:image" content="https://bvltra.com/og-preview.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://bvltra.com/" />
+  <meta name="twitter:title" content="BVLTRA | Tshedza Mosehane" />
+  <meta name="twitter:description"
+    content="Portfolio of Tshedza Mosehane. Full-stack developer & Industrial designer." />
+  <meta name="twitter:image" content="https://bvltra.com/og-preview.jpg" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://bvltra.com/#person",
+            "name": "Tshedza Mosehane",
+            "alternateName": "BVLTRA",
+            "gender": "Male",
+            "jobTitle": ["Full-Stack Developer", "Industrial Designer"],
+            "description": "Full-stack developer and industrial designer, studying Bachelor of Creative Technologies degree at The Open Window Institute, double majoring in interactive development and industrial design.",
+            "url": "https://bvltra.com",
+            "sameAs": [
+              "https://github.com/bvltra",
+              "https://www.linkedin.com/in/tshedza-mosehane-0302092a9",
+              "https://instagram.com/bvltra"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pretoria",
+              "addressRegion": "Gauteng",
+              "addressCountry": "ZA"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://bvltra.com/#organization",
+            "name": "BVLTRA",
+            "alternateName": "BVLTRA Digital Studio",
+            "url": "https://bvltra.com",
+            "logo": "https://bvltra.com/apple-touch-icon.png",
+            "founder": {
+              "@id": "https://bvltra.com/#person"
+            },
+            "description": "An overarching ecosystem and digital studio focused on creative technologies and software development."
+          }
+        ]
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
