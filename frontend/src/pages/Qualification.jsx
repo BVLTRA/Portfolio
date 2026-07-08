@@ -35,6 +35,15 @@ export default function Qualification() {
         />
       </div>
 
+      <div id="degree-details">
+        <SectionIntro 
+          number="03" 
+          title="Details" 
+          heading="Registration data" 
+          paragraph="NQF Level 7 | SAQA ID: 118189"
+        />
+      </div>
+
     </div>
   );
 }
