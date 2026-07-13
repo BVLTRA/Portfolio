@@ -36,6 +36,7 @@ src/
 │   └── Qualification.jsx # Circular image hero mask with NQF Level 7 metadata
 ├── App.jsx             # Switchboard router and layout orchestration
 └── main.jsx            # DOM mounting root
+```
 
 SEO & Identity Infrastructure
 To explicitly instruct search crawlers and prevent the machine from confusing the name BVLTRA with commercial luxury labels, the environment executes a hardcoded JSON-LD Schema Script directly in the root index.html file.
