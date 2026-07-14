@@ -35,7 +35,7 @@ export default function Hero() {
           {/* Render different links based on screen size */}
           {isMobile ? (
             <div className="works-link mobile-warning">
-              Sorry, Currently optimised only for desktop. Mobile view coming soon.
+              Sorry, Currently optimised only for desktop. Mobile view coming soon. (Try landscape for now.)
             </div>
           ) : (
             <a href="#process" className="works-link">
