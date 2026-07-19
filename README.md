@@ -1,5 +1,5 @@
 # Portfolio 
-<img src="./frontend/public/og-preview.jpg" alt="Header image" width="100%" height="auto">
+<img src="./frontend/public/og-preview.gif" alt="Header image" width="100%" height="auto">
 A brutalist and minimal portfolio interface designed under the alias **BVLTRA**. Built with a strict adherence to Swiss typography principles, architectural grid systems, and browser-native pixel physics.
 
 **Currently under active development.**
