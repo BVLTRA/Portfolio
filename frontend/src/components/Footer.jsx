@@ -26,7 +26,7 @@ export default function Footer({ copyrightName }) {
           <div className="footer-column context-column">
             <h4>Context</h4>
             <p className="context-text">
-              BVLTRA is an overarching ecosystem and digital studio. This portfolio serves as an index of individual output, highlighting my works of industrial design and full-stack development.
+              BVLTRA is an overarching ecosystem and digital studio. This portfolio serves as an index of individual output, highlighting my works of UX design and full-stack development.
             </p>
           </div>
 

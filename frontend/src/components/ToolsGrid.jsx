@@ -13,8 +13,8 @@ export default function ToolsGrid() {
           <li>Adobe XD</li>
           <li>Adobe Illustrator</li>
           <li>VS Code</li>
-          <li>SolidWorks</li>
-          <li>Visualize</li>
+          <li> </li>
+          <li> </li>
         </ul>
       </div>
 

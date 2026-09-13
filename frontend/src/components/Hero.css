@@ -27,7 +27,6 @@ header {
   z-index: 0;
 }
 
-/* This is the mechanism that centers everything */
 .content-grid {
   position: relative;
   z-index: 1;
@@ -49,7 +48,7 @@ header {
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: -2px;
-  text-transform: lowercase;
+  text-transform: none;
   margin-bottom: 1.5rem;
   color: #000;
 }

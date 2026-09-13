@@ -15,7 +15,7 @@ export default function QualificationHero() {
       <div className="qual-content">
         <h1 className="qual-title">Bachelor of Creative Technologies.</h1>
         <p className="qual-subtitle">
-          Double major in Interactive Development and Industrial Design. <br/>
+          Double major in Interactive Development and User Experience Design. <br/>
           <span className="qual-institute">Open Window Institute</span>
         </p>
       </div>

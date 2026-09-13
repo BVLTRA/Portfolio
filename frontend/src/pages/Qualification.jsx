@@ -30,8 +30,8 @@ export default function Qualification() {
         <SectionIntro 
           number="2.2" 
           title="Major" 
-          heading="Industrial Design" 
-          paragraph="Industrial Product Design teaches students how to design user-centred physical products. The physical objects that surround us directly influence how we navigate and perceive the world. This specialisation guides students through the process of researching, imagining, modelling and creating the physical objects that people truly love. Students are given hands-on experience in using different materials and manufacturing methods to create a broad range of products from once-off items to mass-produced goods. Ultimately, the main focus is understanding how people use products and how to give them the best possible experience." 
+          heading="User Experience Design" 
+          paragraph="User Experience Design teaches students to craft user interfaces and experiences for digital products and systems. This specialisation develops the necessary skills to create and organise digital assets, develop the look and feel of digital interfaces and ultimately bring creations to life through communicative digital prototypes. Additionally, students are taught to imbue their digital products with optimal user experiences through research and testing. Ultimately, this course combines creative visual thinking with real-world problem solving to produce solutions in the form of visual interface designs for any digital product including websites, mobile devices, apps, kiosks and wearables." 
         />
       </div>
 

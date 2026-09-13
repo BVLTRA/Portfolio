@@ -3,7 +3,7 @@ import './SkillsMarquee.css';
 
 // Break the data down into arrays so they can be mapped as individual components
 const row1 = ["Full-Stack Development", "MERN Stack", "React.js", "Node.js", "API Integration", "Database Architecture"];
-const row2 = ["Industrial Design", "3D Modeling", "CAD", "Rapid Prototyping", "Hardware Aesthetics", "UI/UX Design"];
+const row2 = ["UI/UX Design", "Design Systems", "Wireframing", "Interactive Prototyping", "Information Architecture", "Usability Testing"];
 const row3 = ["Creative Technologies", "User Research", "System Dissection", "Branding", "Interaction Design"];
 
 // A reusable sub-component for the rows

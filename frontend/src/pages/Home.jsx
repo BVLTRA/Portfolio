@@ -25,8 +25,8 @@ function App() {
       <SectionIntro 
         number="1.2" 
         title="The Process" 
-        heading="How I work - Industrial Product Design." 
-        paragraph="When it comes to industrial design, the process is mainly the same. The only differences would be the programs while planing (the classic pen and paper), designing (Solidworks and Visualize), and bringing the product to life through approprate fabrication technologies. During the planning process, I also take account of various design-best-practices such as efficient packaging, balancing user-centered ergonomics, manufacturing feasibility (DFM), aesthetic coherence, and many more." 
+        heading="How I work - UX/UI Design." 
+        paragraph="When it comes to UX/UI design, the core process is mainly the same. The differences lie in the tools while planning (user journeys, information architecture, and the classic pen and paper), designing (Figma, scalable design systems, and high-fidelity prototypes), and bringing the interface to life through usability testing and technical frontend feasibility. During the planning process, I take into account design-best-practices such as reducing cognitive load, accessibility standards (WCAG), responsive ergonomics, usability heuristics, and aesthetic coherence." 
       />
       </div>
 
@@ -36,7 +36,7 @@ function App() {
           number="2.0" 
           title="The Tools" 
           heading="What I use." 
-          paragraph="I use a number of tools that make design and development much easier. I usually use Adobe XD or Figma interchangeably for doing all the process that includes wireframing, prototyping and visual design. For wireframing alone, any graphic design tool can make the job done either it is low fidelity or high fidelity wireframe. For development/coding, I use different tools specific to the development of the application or website. For product design, I mainly use Solidworks programs. Listed below are the tools and technologies that I use and I'm knowledgeable with." 
+          paragraph="I use a number of tools that make design and development much easier. I usually use Adobe XD or Figma interchangeably for doing all the process that includes wireframing, prototyping and visual design. For wireframing and concept layout, whether low-fidelity sketches or high-fidelity interactive prototypes, I prioritize clarity and structural hierarchy before touching code. For development and implementation, I use different tools specific to the development of the application or website." 
       >
         {/* Tool list component may be edited in actual component file */}
         <ToolsGrid />

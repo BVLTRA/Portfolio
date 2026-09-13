@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="left-column">
           <h1 className="hero-title">
             full-stack developer <br/>
-            &amp; industrial designer.
+            &amp; UI/UX designer.
           </h1>
           
           <p className="hero-intro">
