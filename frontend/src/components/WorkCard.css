@@ -1,0 +1,57 @@
+/* --- The Individual Work Row --- */
+.work-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Forces the text to strictly align to the left */
+  text-align: left;
+  padding: 4rem 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* Dark divider line */
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.work-title {
+  font-size: 4vw; 
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #111111; /* Stark, near-black for maximum readability */
+  margin: 0 0 0.5rem 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.work-tech {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666; /* Medium-dark grey to contrast the light background */
+  letter-spacing: 0.5px;
+  margin: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Card-Specific Hover Animation --- */
+.work-row:hover .work-title {
+  transform: translateX(20px); 
+}
+
+.work-row:hover .work-tech {
+  transform: translateX(20px); 
+  color: #111111; /* Turns the tech text fully black when hovered */
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 768px) {
+  .work-row {
+    padding: 2.5rem 0;
+  }
+  
+  .work-title {
+    font-size: 42px; 
+    letter-spacing: -1px;
+  }
+  
+  .work-row:hover .work-title,
+  .work-row:hover .work-tech {
+    transform: translateX(10px); 
+  }
+}

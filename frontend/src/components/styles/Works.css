@@ -1,0 +1,7 @@
+.works-index-list:hover .work-row {
+  opacity: 0.3; /* Dims the whole list when hovering */
+}
+
+.works-index-list .work-row:hover {
+  opacity: 1; /* Forces the specific card you are hovering on to stay fully bright */
+}
