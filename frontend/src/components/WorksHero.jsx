@@ -14,7 +14,7 @@ export default function WorksHero() {
         <h1 className="qual-title">Selected Works.</h1>
         <p className="qual-subtitle">
           A collection of digital platforms, interactive systems, and UX architecture. <br/>
-          <span className="qual-institute">(2025 — 2026)</span>
+          <span className="qual-institute">(2025 — Present)</span>
         </p>
       </div>
 

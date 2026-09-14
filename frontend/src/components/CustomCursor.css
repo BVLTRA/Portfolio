@@ -1,0 +1,25 @@
+/* Only apply the custom cursor on devices that actually have a physical mouse */
+@media (pointer: fine) {
+  /* Hide default browser cursor everywhere */
+  * {
+    cursor: none !important;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #00ffff;
+    border-radius: 50%;
+    z-index: 9999;
+    
+    /* CRITICAL: Allowing pointer events to pass through the cursor */
+    pointer-events: none; 
+    
+    /* Start the dot off-screen so it doesn't flash in the corner on load */
+    transform: translate3d(-100px, -100px, 0); 
+    mix-blend-mode: difference;
+  }
+}
