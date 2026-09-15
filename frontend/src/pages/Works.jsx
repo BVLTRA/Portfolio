@@ -9,13 +9,13 @@ export default function Works() {
       id: 1,
       title: "Relay",
       tech: "An operational fault-logging and communication handoff system for teams.",
-      link: "https://relay.bvltra.com"
+      link: "https://github.com/BVLTRA/Relay"
     },
     {
       id: 2,
       title: "BVLTRA Metrics",
       tech: "A React-based project designed to deconstruct consumables into high-fidelity data points.",
-      link: "https://metrics.bvltra.com"
+      link: "https://github.com/BVLTRA/Metrics"
     },
     {
       id: 3,
