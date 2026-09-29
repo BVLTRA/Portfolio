@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -49,6 +50,7 @@ function App() {
         <CustomCursor/>
 
         <Footer copyrightName="BVLTRA" />
+        <Analytics/>
       </div>
     </Router>
   );
