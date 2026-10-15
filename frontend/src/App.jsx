@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
 import Works from './pages/Works';
@@ -22,6 +24,8 @@ function App() {
       smoothWheel: true,
     });
 
+    window.lenis = lenis;
+
     let rafId;
 
     function raf(time) {
@@ -34,11 +38,13 @@ function App() {
     return () => {
       lenis.destroy();
       cancelAnimationFrame(rafId);
+      window.lenis = null;
     };
   }, []);
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="portfolio-wrapper">
         <Navbar />
         

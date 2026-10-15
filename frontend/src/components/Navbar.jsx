@@ -28,7 +28,7 @@ export default function Navbar() {
           
           <Link 
             to="/works" 
-            className={location.pathname === '/works' ? 'active-link' : ''}
+            className={location.pathname.startsWith('/works') ? 'active-link' : ''}
           >
             Works
           </Link>
