@@ -1,0 +1,101 @@
+.project-highlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; 
+  width: 100%;
+}
+
+/* --- Numbered List --- */
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.highlight-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.highlight-number {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.highlight-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #111111;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+/* --- Tech Stack Pills --- */
+.built-with-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.built-with-label {
+  font-size: 13px;
+  color: #888888;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tech-pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tech-pill {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111111;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  cursor: default;
+}
+
+.tech-pill p {
+  margin-top: 0.1rem;
+  padding: 0;
+}
+
+.tech-pill:hover {
+  border-color: #111111;
+  background-color: #ffffff;
+}
+
+/* .pill-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #111111;
+  mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2z"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2z"/></svg>');
+} */
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 900px) {
+  .highlight-text {
+    font-size: 18px;
+  }
+  .highlight-row {
+    gap: 1.5rem;
+    padding: 1.2rem 0;
+  }
+}

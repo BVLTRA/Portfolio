@@ -5,6 +5,7 @@ import "../components/styles/WorkDetail.css";
 import EditorialSplit from "../components/EditorialSplit";
 import ScreenCarousel from "../components/ScreenCarousel";
 import GraphicStrip from "../components/GraphicStrip";
+import ProjectHighlights from "../components/ProjectHighlights";
 
 // Plethora Assets
 import PlethoraLogo from "../assets/images/works/prjPlethora/Logo.gif";
@@ -65,17 +66,36 @@ export default function WorkDetail() {
       logo: PlethoraLogo,
 
       challengeHeading: "Scalability constraints.",
-      challenge: "Building a highly scalable architecture that handles custom licensing schemas without sacrificing frontend rendering speeds.",
+      challenge:
+        "Building a highly scalable architecture that handles custom licensing schemas without sacrificing frontend rendering speeds.",
       approachHeading: "Decoupled Architecture.",
-      approach: "Decoupling the frontend and backend using React and PHP. We established strict database schemas...",
+      approach:
+        "Decoupling the frontend and backend using React and PHP. We established strict database schemas...",
+      highlights: [
+        "Device mockups rendered from real client sites",
+        "Scroll-scrubbed 3D phone and laptop elements",
+        "Guided project brief with automated estimations",
+        "GSAP + Lenis motion on React and TypeScript",
+      ],
+      techPills: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "GSAP",
+        "Lenis",
+      ],
+      credits:
+        "UI Design & Frontend Development: Tshedza Mosehane. Backend Architecture: BVLTRA Systems.",
+
       screens: [
-          { url: PlethoraLogin, name: "Home Dashboard" },
-          { url: PlethoraHero, name: "Hero Section" },
-            { url: PlethoraExplore, name: "Explore Page" },
-            { url: PlethoraShare, name: "Share Feature" },
-            { url: PlethoraViewPost, name: "View Post" },
-            { url: PlethoraAccount, name: "Account Settings" }
-      ]
+        { url: PlethoraLogin, name: "Home Dashboard" },
+        { url: PlethoraHero, name: "Hero Section" },
+        { url: PlethoraExplore, name: "Explore Page" },
+        { url: PlethoraShare, name: "Share Feature" },
+        { url: PlethoraViewPost, name: "View Post" },
+        { url: PlethoraAccount, name: "Account Settings" },
+      ],
     },
     metrics: {
       title: "BVLTRA Metrics",
@@ -144,34 +164,40 @@ export default function WorkDetail() {
       </div>
 
       {/* --- MORE ABOUT THIS PROJECT --- */}
-      
+
       <GraphicStrip />
-      
+
       <div className="work-editorial-content">
-        
         {/* The Text Blocks */}
-        <EditorialSplit 
-          number="01" 
-          title="The Challenge" 
-          heading={project.challengeHeading} 
-          text={project.challenge} 
+        <EditorialSplit
+          number="01"
+          title="The Challenge"
+          heading={project.challengeHeading}
+          text={project.challenge}
         />
-        
-        <EditorialSplit 
-          number="02" 
-          title="The Approach" 
-          heading={project.approachHeading} 
-          text={project.approach} 
+
+        <EditorialSplit
+          number="02"
+          title="The Approach"
+          heading={project.approachHeading}
+          text={project.approach}
         />
-        
-        {/* The Image Carousel (Injected as children, no heading/text) */}
-        <EditorialSplit 
-          number="03" 
-          title="The Screens"
-        >
+
+        {/* Image Carousel */}
+        <EditorialSplit number="04" title="The Screens">
           <ScreenCarousel screens={project.screens} />
         </EditorialSplit>
 
+        {/* Image Carousel (Injected as children, no heading/text) */}
+        <EditorialSplit number="03" title="Highlights">
+          <ProjectHighlights 
+            highlights={project.highlights} 
+            techPills={project.techPills} 
+          />
+        </EditorialSplit>
+
+        {/* CREDITS BLOCK */}
+        <EditorialSplit number="05" title="Credits" text={project.credits} />
       </div>
     </div>
   );
