@@ -1,0 +1,87 @@
+.editorial-split-wrapper {
+  width: 100%;
+  padding: 5rem 0; 
+  background-color: transparent;
+  border-top: 1px solid rgba(0, 0, 0, 0.15); /* Keep the dividing line */
+}
+
+.editorial-split-grid {
+  width: 100%;
+  max-width: 1300px; 
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* The 3-column architectural grid */
+  gap: 2rem;
+}
+
+/* --- Left Segment --- */
+.editorial-sidebar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.editorial-number {
+  font-size: 10px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.editorial-title {
+  font-size: 10px;
+  color: #888888;
+  font-weight: 500;
+}
+
+/* --- Center Segment --- */
+.editorial-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* --- Carousel Expansion Hack --- */
+.editorial-split-grid:has(.carousel-wrapper) .editorial-content {
+  /* Tells the grid: If this specific block holds the carousel, 
+     start in the center column (2) but stretch all the way to the end (4) */
+  grid-column: 2 / 4; 
+}
+
+/* Hide the right spacer when the carousel is present or it will try to squish itself next to the stretched images */
+.editorial-split-grid:has(.carousel-wrapper) .editorial-spacer {
+  display: none;
+}
+
+.editorial-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.editorial-text {
+  font-size: 18px;
+  line-height: 2;
+  color: #474747;
+  margin: 0;
+}
+
+/* --- Responsive Collapse --- */
+@media (max-width: 900px) {
+  .editorial-split-grid {
+    grid-template-columns: 1fr; 
+    max-width: 600px;
+  }
+  
+  .editorial-spacer {
+    display: none; 
+  }
+  
+  .editorial-sidebar {
+    margin-bottom: 1rem;
+  }
+}

@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Works from './pages/Works';
 import Qualification from './pages/Qualification';
 import ContactPage from './pages/ContactPage';
+import WorkDetail from './pages/WorkDetail';
 import CustomCursor from './components/CustomCursor';
 
 import './App.css';
@@ -44,6 +45,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
+          <Route path="/works/:id" element={<WorkDetail />} />
           <Route path="/qualification" element={<Qualification />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

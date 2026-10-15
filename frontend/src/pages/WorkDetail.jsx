@@ -1,0 +1,178 @@
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import "../components/styles/WorkDetail.css";
+
+import EditorialSplit from "../components/EditorialSplit";
+import ScreenCarousel from "../components/ScreenCarousel";
+import GraphicStrip from "../components/GraphicStrip";
+
+// Plethora Assets
+import PlethoraLogo from "../assets/images/works/prjPlethora/Logo.gif";
+import PlethoraLogin from "../assets/images/works/prjPlethora/Login.png";
+import PlethoraHero from "../assets/images/works/prjPlethora/Hero.png";
+import PlethoraExplore from "../assets/images/works/prjPlethora/Explore.png";
+import PlethoraShare from "../assets/images/works/prjPlethora/Share.png";
+import PlethoraViewPost from "../assets/images/works/prjPlethora/ViewPost.png";
+import PlethoraAccount from "../assets/images/works/prjPlethora/Account.png";
+
+export default function WorkDetail() {
+  const { id } = useParams(); // Grabs 'relay' or 'bioshift' from the URL
+
+  // The Master Database for your projects
+  const projectData = {
+    relay: {
+      title: "Relay",
+      categoryTags: ["Development", "UX Architecture"],
+      description:
+        "A fault-logging and task assignment system designed for team management. Focused on minimizing friction between reporting a hardware failure and technical intervention.",
+      role: "Lead Developer • Interface Design",
+      year: "2026",
+      context: "Independent Build, BVLTRA Ecosystem",
+      stack: "React • Express • Node.js • Tailwind CSS • MongoDB",
+      logo: "/relay-logo.png", // Placeholder
+    },
+    bioshift: {
+      title: "BioShift",
+      categoryTags: ["Prototyping", "UX Research"],
+      description:
+        "An experimental interactive codebase exploring modular interfaces and shared-source licensing environments.",
+      role: "UX Researcher • Prototyper",
+      year: "2026",
+      context: "Academic Research, Open Window",
+      stack: "Figma • React • Custom Hooks • Lenis",
+      logo: "/bioshift-logo.png", // Placeholder
+    },
+    reasons: {
+      title: "Reasons",
+      categoryTags: ["Development", "Interaction"],
+      description:
+        "A digital tool built for interpersonal communication, prioritizing emotional resonance over standard messaging mechanics.",
+      role: "Front-end Developer • Concept Design",
+      year: "2026",
+      context: "BVLTRA Platform",
+      stack: "React • Raw CSS • Framer Motion",
+      logo: "/reasons-logo.png", // Placeholder
+    },
+    plethora: {
+      title: "Plethora",
+      categoryTags: ["Development", "Web Platform"],
+      description:
+        "A comprehensive web platform featuring custom license agreements and a decoupled architecture, integrating a modern frontend with a robust server-side backend.",
+      role: "Full-Stack Developer",
+      year: "2026",
+      context: "BVLTRA Platform",
+      stack: "React • PHP • Vite • Custom Database Schemas",
+      logo: PlethoraLogo,
+
+      challengeHeading: "Scalability constraints.",
+      challenge: "Building a highly scalable architecture that handles custom licensing schemas without sacrificing frontend rendering speeds.",
+      approachHeading: "Decoupled Architecture.",
+      approach: "Decoupling the frontend and backend using React and PHP. We established strict database schemas...",
+      screens: [
+          { url: PlethoraLogin, name: "Home Dashboard" },
+          { url: PlethoraHero, name: "Hero Section" },
+            { url: PlethoraExplore, name: "Explore Page" },
+            { url: PlethoraShare, name: "Share Feature" },
+            { url: PlethoraViewPost, name: "View Post" },
+            { url: PlethoraAccount, name: "Account Settings" }
+      ]
+    },
+    metrics: {
+      title: "BVLTRA Metrics",
+      categoryTags: ["Full-Stack", "Data"],
+      description:
+        "A data visualization platform engineered to deconstruct and display complex nutritional tracking metrics through a brutalist lens.",
+      role: "Full-Stack Developer",
+      year: "2026",
+      context: "BVLTRA Platform",
+      stack: "React • Node.js • Express • Chart.js • MongoDB",
+      logo: "/metrics-logo.png", // Placeholder
+    },
+  };
+
+  const project = projectData[id];
+
+  // Fallback if someone types a broken URL
+  if (!project) return <div className="error-state">Project not found.</div>;
+
+  return (
+    <div className="work-detail-wrapper">
+      {/* Breadcrumb Navigation */}
+      <div className="breadcrumb">
+        <Link to="/works" className="back-link">
+          Work
+        </Link>{" "}
+        <span className="slash">/</span>
+        {project.categoryTags.map((tag, index) => (
+          <span key={index} className="tag-pill">
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      {/* The Header Area */}
+      <div className="work-header">
+        <div className="work-logo-box">
+          <img src={project.logo} alt={`${project.title} Logo`} />
+        </div>
+        <h1 className="work-title-massive">{project.title}</h1>
+        <p className="work-description">{project.description}</p>
+      </div>
+
+      {/* The Tabular Data Grid */}
+      <div className="work-data-grid">
+        <div className="grid-row top-row">
+          <div className="grid-cell role-cell">
+            <span className="cell-label">Role</span>
+            <span className="cell-data">{project.role}</span>
+          </div>
+          <div className="grid-cell year-cell">
+            <span className="cell-label">Year</span>
+            <span className="cell-data">{project.year}</span>
+          </div>
+          <div className="grid-cell context-cell">
+            <span className="cell-label">Context</span>
+            <span className="cell-data">{project.context}</span>
+          </div>
+        </div>
+        <div className="grid-row bottom-row">
+          <div className="grid-cell stack-cell">
+            <span className="cell-label">Stack</span>
+            <span className="cell-data">{project.stack}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* --- MORE ABOUT THIS PROJECT --- */}
+      
+      <GraphicStrip />
+      
+      <div className="work-editorial-content">
+        
+        {/* The Text Blocks */}
+        <EditorialSplit 
+          number="01" 
+          title="The Challenge" 
+          heading={project.challengeHeading} 
+          text={project.challenge} 
+        />
+        
+        <EditorialSplit 
+          number="02" 
+          title="The Approach" 
+          heading={project.approachHeading} 
+          text={project.approach} 
+        />
+        
+        {/* The Image Carousel (Injected as children, no heading/text) */}
+        <EditorialSplit 
+          number="03" 
+          title="The Screens"
+        >
+          <ScreenCarousel screens={project.screens} />
+        </EditorialSplit>
+
+      </div>
+    </div>
+  );
+}

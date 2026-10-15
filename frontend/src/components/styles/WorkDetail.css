@@ -1,0 +1,159 @@
+.work-detail-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f2f4; 
+  padding: 8rem 4rem 6rem 4rem;
+  color: #111111;
+}
+
+/* --- Breadcrumbs & Tags --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.back-link {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #111111;
+}
+
+.slash {
+  margin: 0 0.2rem;
+}
+
+.tag-pill {
+  background-color: #ff0000;
+  color: #111111;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Header Section --- */
+.work-header {
+  max-width: 1000px;
+  margin-bottom: 6rem;
+}
+
+.work-logo-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.work-logo-box img {
+  max-height: 500px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.work-title-massive {
+  text-align: left;
+  font-size: 4vw;
+  font-weight: 400;
+  font-family: "Visuelt Pro", sans-serif;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin: 0 0 2rem 0;
+  color: #0b0f14; /* Deep, ink black */
+}
+
+.work-description {
+  font-size: 28px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333333;
+  max-width: 800px;
+}
+
+/* --- The Tabular Grid --- */
+.work-data-grid {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden; 
+  background-color: transparent;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.top-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.grid-cell {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.role-cell {
+  flex: 2;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.year-cell {
+  flex: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.context-cell {
+  flex: 3;
+}
+
+.stack-cell {
+  flex: 1;
+}
+
+.cell-label {
+  font-size: 11px;
+  color: #888888;
+}
+
+.cell-data {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111111;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 900px) {
+  .work-detail-wrapper {
+    padding: 8rem 2rem 4rem 2rem;
+  }
+  
+  .work-title-massive {
+    font-size: 64px;
+    letter-spacing: -2px;
+  }
+  
+  .work-description {
+    font-size: 20px;
+  }
+  
+  .grid-row {
+    flex-direction: column;
+  }
+  
+  .role-cell, .year-cell {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
+
