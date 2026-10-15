@@ -10,12 +10,12 @@ import ProjectHighlights from "../components/ProjectHighlights";
 
 // Plethora Assets
 import PlethoraLogo from "../assets/images/works/prjPlethora/Logo.gif";
-import PlethoraLogin from "../assets/images/works/prjPlethora/Login.png";
-import PlethoraHero from "../assets/images/works/prjPlethora/Hero.png";
-import PlethoraExplore from "../assets/images/works/prjPlethora/Explore.png";
-import PlethoraShare from "../assets/images/works/prjPlethora/Share.png";
-import PlethoraViewPost from "../assets/images/works/prjPlethora/ViewPost.png";
-import PlethoraAccount from "../assets/images/works/prjPlethora/Account.png";
+import PlethoraLogin from "../assets/images/works/prjPlethora/Login.jpg";
+import PlethoraHero from "../assets/images/works/prjPlethora/Hero.jpg";
+import PlethoraExplore from "../assets/images/works/prjPlethora/Explore.jpg";
+import PlethoraShare from "../assets/images/works/prjPlethora/Share.jpg";
+import PlethoraViewPost from "../assets/images/works/prjPlethora/ViewPost.jpg";
+import PlethoraAccount from "../assets/images/works/prjPlethora/Account.jpg";
 
 export default function WorkDetail() {
   const { id } = useParams(); // Grabs name from the URL
